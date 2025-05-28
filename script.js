@@ -117,7 +117,14 @@ function selectAnswer(e)
 function showScore()
 {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    if(score >= 4)
+    {
+        questionElement.innerHTML = "Excellent! 🎉" + ` You scored ${score} out of ${questions.length}!`;
+    }
+    else
+    {
+        questionElement.innerHTML = "Good try! 😐" + ` You scored ${score} out of ${questions.length}!`;
+    }
     nextButton.innerHTML = "Restart Quiz";
     nextButton.style.display = "block";
 }
