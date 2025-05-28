@@ -123,7 +123,7 @@ function showScore()
     }
     else
     {
-        questionElement.innerHTML = "Good try! 😐" + ` You scored ${score} out of ${questions.length}!`;
+        questionElement.innerHTML = "Good try! 👍" + ` You scored ${score} out of ${questions.length}!`;
     }
     nextButton.innerHTML = "Restart Quiz";
     nextButton.style.display = "block";
